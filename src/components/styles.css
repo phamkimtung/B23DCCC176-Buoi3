@@ -1,0 +1,199 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Định dạng cho container chứa nội dung */
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề h2 */
+h2 {
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input text và input number */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+/* Nút mặc định */
+button {
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* Nút màu xanh (Thêm và Sửa) */
+button.btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+button.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Nút màu xanh (Sửa) */
+button.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+button.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Nút màu xám (Quay lại và Hủy) */
+button.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+button.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Nút màu đỏ (Xóa) */
+button.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+button.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Modal - Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal content */
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+/* Tiêu đề trong modal */
+.modal-content h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+}
+
+/* Các input trong modal */
+.modal-content input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+/* Button trong modal */
+.modal-content button {
+  padding: 12px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Nút trong modal */
+.modal-content .btn-primary {
+  background-color: #28a745;
+  color: white;
+}
+
+.modal-content .btn-primary:hover {
+  background-color: #218838;
+}
+
+/* Định dạng cho các danh sách sản phẩm */
+.list-group {
+  padding: 0;
+}
+
+.list-group-item {
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+/* Container chứa các nút (Sửa, Xóa) */
+.list-group-item .button-container {
+  display: flex;
+  justify-content: flex-end; /* Căn các nút về bên phải */
+  gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+/* Sắp xếp các nút bên cạnh nhau */
+.list-group-item .btn-danger,
+.list-group-item .btn-primary {
+  margin-left: 0; /* Bỏ margin bên trái */
+}
+
+/* Hiệu ứng hover cho các nút */
+.list-group-item .btn-danger:hover,
+.list-group-item .btn-primary:hover {
+  opacity: 0.8;
+}
+
+button:focus {
+  outline: none;
+}
